@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: #f2f4f7;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px;
+
+    background-color: white;
+    border-radius: 12px;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 0;
+    color: #666;
+    font-size: 17px;
+}
+
+
+
+section {
+    max-width: 900px;
+    margin: 15px auto 0;
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 12px;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#education li {
+    margin-bottom: 15px;
+    padding: 12px 15px;
+
+    background-color: #f7f8fa;
+    border-radius: 6px;
+}
+
+#education li:last-child {
+    margin-bottom: 0;
+}
+
+#skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#skills h2 {
+    width: 100%;
+}
+
+#skills .skill {
+    padding: 8px 14px;
+    background-color: #e9ecef;
+    color: #333;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    max-width: 900px;
+    margin: 15px auto 0;
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 12px;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0077cc;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    max-width: 900px;
+    margin: 20px auto 0;
+    padding: 10px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 8px;
+}
+
+nav a:hover {
+    color: #0077cc;
+}
