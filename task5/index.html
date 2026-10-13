@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game">
+    <h1>Simon</h1>
+
+    <p class="description">
+        Запомните последовательность и повторите её.
+    </p>
+
+    <div class="info">
+        Уровень: <span id="level">0</span>
+    </div>
+
+    <div class="simon-board">
+        <button class="simon-button green" data-index="0"></button>
+        <button class="simon-button red" data-index="1"></button>
+        <button class="simon-button yellow" data-index="2"></button>
+        <button class="simon-button blue" data-index="3"></button>
+    </div>
+
+
+    
+    <p id="message">Нажмите «Старт»</p>
+
+    <button id="startButton">Старт</button>
+</div>
+
+<script src="model.js"></script>
+<script src="view.js"></script>
+<script src="controller.js"></script>
+</body>
+</html>
