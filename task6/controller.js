@@ -13,13 +13,32 @@ class SnakeController {
         document.addEventListener("keydown", this.handleKeyDown);
 
         document
+            .getElementById("startButton")
+            .addEventListener("click", () => this.startGame());
+
+        document
             .getElementById("restartButton")
             .addEventListener("click", () => this.restart());
 
         this.view.draw();
+        this.isStarted = false;
+    }
+
+    startGame() {
+        this.model.reset();
+        this.isStarted = true;
+
+        document.getElementById("startScreen").hidden = true;
+
+        this.view.draw();
+        this.start();
     }
 
     handleKeyDown(event) {
+        if (!this.isStarted) {
+            return;
+        }
+
         const directions = {
             ArrowUp: { x: 0, y: -1 },
             ArrowDown: { x: 0, y: 1 },
@@ -74,6 +93,8 @@ class SnakeController {
         }
 
         this.model.reset();
+        this.isStarted = true;
+
         this.view.draw();
         this.start();
     }
@@ -82,5 +103,3 @@ class SnakeController {
 const model = new SnakeModel();
 const view = new SnakeView(model);
 const controller = new SnakeController(model, view);
-
-controller.start();
