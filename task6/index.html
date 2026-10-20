@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Змейка</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="model.js" defer></script>
+    <script src="view.js" defer></script>
+    <script src="controller.js" defer></script>
+</head>
+<body>
+    <main class="game">
+        <h1>Змейка</h1>
+
+        <p class="score">
+            Счёт: <span id="score">0</span>
+        </p>
+
+        <canvas id="gameCanvas" width="400" height="400">
+            Ваш браузер не поддерживает Canvas.
+        </canvas>
+
+        <section id="gameOver" class="game-over" hidden>
+            <h2>Игра окончена!</h2>
+            <p>Ваш счёт: <span id="finalScore">0</span></p>
+            <button id="restartButton">Начать заново</button>
+        </section>
+    </main>
+</body>
+</html>
