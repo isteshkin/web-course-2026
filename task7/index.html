@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лента постов</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="controller.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Лента постов</h1>
+    </header>
+
+    <main class="container">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Поиск по заголовку..."
+            autocomplete="off"
+        >
+
+        <div id="posts" class="posts"></div>
+
+        <div id="loading" class="message" hidden>
+            Загрузка…
+        </div>
+
+        <div id="error" class="message error" hidden></div>
+
+        <div id="endMessage" class="message" hidden>
+            Больше постов нет
+        </div>
+
+        <div id="sentinel"></div>
+    </main>
+</body>
+</html>
